@@ -3,34 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
+    <title>Resume Information</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; background: linear-gradient(to right, #ff7e5f, #feb47b); }
-        .container { max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0,0,0,0.2); }
-        h1, h2 { color: #333; text-align: center; }
-        .contact-form { margin-top: 20px; }
-        label, input, textarea { display: block; width: 100%; margin-top: 5px; }
-        input, textarea { padding: 8px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #ccc; }
-        button { background: #28a745; color: white; padding: 10px; border: none; cursor: pointer; border-radius: 5px; }
-        button:hover { background: #218838; }
-        .login-form { margin-top: 20px; padding: 20px; background: #f9f9f9; border-radius: 10px; box-shadow: 0px 0px 5px rgba(0,0,0,0.1); }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #0033cc, #66ccff);
+            color: white;
+            text-align: center;
+            margin: 20px;
+        }
+        .container {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+            color: #333;
+        }
+        h1, h2 {
+            color: #0033cc;
+        }
+        label, input, textarea, select {
+            display: block;
+            width: 100%;
+            margin-top: 5px;
+            font-size: 16px;
+        }
+        input, textarea, select {
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: 1px solid #0033cc;
+        }
+        button {
+            background: #0033cc;
+            color: white;
+            padding: 12px;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: background 0.3s;
+            width: 100%;
+        }
+        button:hover {
+            background: #002080;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>John Doe</h1>
-        <h2>Web Developer</h2>
-        <p>Experienced web developer specializing in front-end and back-end development.</p>
-        
-        <h3>Skills</h3>
-        <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>React, Node.js</li>
-            <li>Java, Selenium</li>
-        </ul>
-        
-        <h3>Login</h3>
-        <form class="login-form" id="loginForm">
+        <h2>Login</h2>
+        <form id="loginForm">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
             
@@ -39,11 +64,13 @@
             
             <button type="submit">Login</button>
         </form>
-        
-        <h3>Contact Me</h3>
-        <form class="contact-form" id="contactForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+    </div>
+    <br>
+    <div class="container">
+        <h2>Resume Information</h2>
+        <form id="resumeForm">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
             
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
@@ -51,10 +78,22 @@
             <label for="phone">Phone:</label>
             <input type="tel" id="phone" name="phone" required>
             
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="2" required></textarea>
             
-            <button type="submit">Submit</button>
+            <label for="experience">Work Experience:</label>
+            <textarea id="experience" name="experience" rows="3" required></textarea>
+            
+            <label for="education">Education:</label>
+            <textarea id="education" name="education" rows="2" required></textarea>
+            
+            <label for="skills">Skills:</label>
+            <textarea id="skills" name="skills" rows="2" required></textarea>
+            
+            <label for="projects">Projects:</label>
+            <textarea id="projects" name="projects" rows="3" required></textarea>
+            
+            <button type="submit">Submit Resume</button>
         </form>
     </div>
 </body>
