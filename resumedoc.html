@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: linear-gradient(to right, #ff7e5f, #feb47b); }
+        .container { max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0,0,0,0.2); }
+        h1, h2 { color: #333; text-align: center; }
+        .contact-form { margin-top: 20px; }
+        label, input, textarea { display: block; width: 100%; margin-top: 5px; }
+        input, textarea { padding: 8px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #ccc; }
+        button { background: #28a745; color: white; padding: 10px; border: none; cursor: pointer; border-radius: 5px; }
+        button:hover { background: #218838; }
+        .login-form { margin-top: 20px; padding: 20px; background: #f9f9f9; border-radius: 10px; box-shadow: 0px 0px 5px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>John Doe</h1>
+        <h2>Web Developer</h2>
+        <p>Experienced web developer specializing in front-end and back-end development.</p>
+        
+        <h3>Skills</h3>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>React, Node.js</li>
+            <li>Java, Selenium</li>
+        </ul>
+        
+        <h3>Login</h3>
+        <form class="login-form" id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">Login</button>
+        </form>
+        
+        <h3>Contact Me</h3>
+        <form class="contact-form" id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
